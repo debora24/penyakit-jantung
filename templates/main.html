@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Main Page</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body class="main-body">
+    <div class="main-container">
+        <h2>Welcome to the Heart Disease Classification System</h2>
+        <img src="{{ url_for('static', filename='heart_image.jpg') }}" alt="Heart Image" style="width: 200px; height: auto;">
+        <p><a href="{{ url_for('diagnose') }}" class="btn btn-info">Diagnose Heart Disease</a></p>
+        <p><a href="{{ url_for('logout') }}" class="btn btn-danger">Logout</a></p>
+    </div>
+</body>
+</html>
